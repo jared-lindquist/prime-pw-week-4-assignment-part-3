@@ -19,13 +19,15 @@ console.log('Adding fork (expect true)',addItem(' fork'));
 console.log(`Basket is now ${basket}`);
 
 
-basket.forEach(function(item){
+function listItems(){
+    basket.forEach(function(item){
     console.log(item);
-})
-
+    })
+}
 
 function empty(){
-    for (item in basket)
-    basket.pop(item);
+    console.log('Full basket: ' + basket);
+    basket.length = 0;
+    console.log('Empty basket: ' + basket);
 }
-console.log(basket);
+empty();
