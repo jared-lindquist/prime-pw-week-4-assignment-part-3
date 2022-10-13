@@ -15,10 +15,14 @@ const maxItems = 5;
 }
 
 function addItem(item){
-    basket.push(item);
-    return true;
+    if (isFull() != true){
+      basket.push(item);
+      return true;
+    } else {
+      console.log('The basket is full');
+      return false;
     }
-
+  }
 
 console.log(`Basket is ${basket}`);
 console.log('Adding cup (expect true)', addItem(' cup'));
