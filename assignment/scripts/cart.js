@@ -42,6 +42,15 @@ function listItems(){
 }
 listItems();
 
+function removeItem(){
+    if (item = basket.indexOf()){
+      basket.splice(item);
+      return true;
+  } else {
+    return false;
+  }
+  }
+  console.log('Removing fork (expect true)',removeItem(' fork'));
 
 function empty(){
   console.log('Full basket: ' + basket);
@@ -49,3 +58,4 @@ function empty(){
   console.log('Empty basket: ' + basket);
 }
 empty();
+
