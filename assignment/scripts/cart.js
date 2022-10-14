@@ -6,6 +6,8 @@ let basket = [];
 item = ('');
 const maxItems = 5;
 
+//Stretch goal #2 isFull function.
+
 function isFull(){
   if (basket.length < maxItems){
       return false;
@@ -13,6 +15,8 @@ function isFull(){
       return true;
   }
 }
+
+// addItem function below
 
 function addItem(item){
   if (isFull() != true){
@@ -34,6 +38,8 @@ console.log('The basket is full');
 console.log(`Basket is now ${basket}`);
 
 
+//listItems function below
+
 function listItems(){
   const lister = basket.values();
  for (const value of lister){
@@ -41,6 +47,8 @@ function listItems(){
  }
 }
 listItems();
+
+//Stretch goal #4 removeItem function.
 
 function removeItem(){
     if (item = basket.indexOf()){
@@ -51,6 +59,8 @@ function removeItem(){
   }
   }
   console.log('Removing fork (expect true)',removeItem(' fork'));
+
+//empty function below
 
 function empty(){
   console.log('Full basket: ' + basket);
